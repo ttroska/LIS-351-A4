@@ -283,8 +283,8 @@ a:hover { text-decoration: underline; }
        - cover
        - centered
   */         
-  object-fit: cover;     
-  object-position: center; 
+  background-size: cover;     
+ background-position: center; 
 }
 
 /* Optional images (already provided) */
@@ -310,6 +310,11 @@ a:hover { text-decoration: underline; }
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+.cta-text p {
+  margin: 0 0 14px;
+  color: #666;
+  font-size: 13px;
 }
 
 

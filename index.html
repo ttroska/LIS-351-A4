@@ -34,36 +34,38 @@ STEP 1: Add the required HTML5 skeleton
     <!-- =========================================================
     STEP 3: Hero section + “Get Started button” as a link
     ========================================================= -->
-<div>
-  <h1>All About Me</h1>
+<div class = "hero">
+  <div class = "hero-content">
+   <h1>All About Me</h1>
 
-  <p>This website serves as a brief introduction to myself and the things I care about: videogames, art, and my collections.
-  </p>
+  <p class = "hero-subhead"> This website serves as a brief introduction to myself and the things I care about: videogames, art, and my collections. </p>
 
-  <a href="#">Click Here to Learn More!</a>
+  <a href="#" class = "btn btn-dark">Click Here to Learn More!</a>
 </div>
     
 
     <!-- =========================================================
     STEP 4: Features section (3 blocks) + featured content section
     ========================================================= -->
-<div>
-  <main>
-  <section>
-  <h2>Videogames</h2>
-  <p>
-    Growing up, I was quite shy, making it difficult to make friends. Playing videogames was both a way to connect to others and a way to distract myself from loneliness.
+  <section class = "features">
+    <div class = container features-grid">
+     <section class = "feature">
+      <h2>Videogames</h2>
+      <p>
+        Growing up, I was quite shy, making it difficult to make friends. Playing videogames was both a way to connect to others and a way to distract myself from loneliness.
     My all-time favorite franchise is the Pokemon series; I've played almost every single main series game and several spin-off games.
-</p>
+  </p>
 </section>
-<section> 
+
+<section class = "feature"> 
   <h2>Art</h2>
   <p>
     I've been drawing off-and-on since 2020, Covid Era. I took a break when I started college in Fall of 2024, 
     but I've been trying to get back into it over the past few months.
   </p>
 </section>
-  <section>
+  
+<section class = "feature">
   <h2>My Collections</h2>
   <p>
     I have several small collections related to my passions, some that I've been working on for years.
@@ -74,9 +76,12 @@ STEP 1: Add the required HTML5 skeleton
       <li>My Little Pony brushable toys</li>
     </ul>
   </section>
-<section>
-  <h2>Featured Art</h2>
-  <p> 
+  </div>
+  </section>
+
+<section class = "featured">
+  <h2 class = "section-title">Featured Art</h2>
+  <p class = "section-lead"> 
     Since 2020, my primary method of creating has been digital art via the Procreate app on my iPad. 
     I've drawn several things over the past 6 years, but my current interest is in drawing My Little Pony characters, both canon and original.
     While I'm still learning and looking to improve my skills, especially in regards to anatomy and flow, 
@@ -92,38 +97,60 @@ STEP 1: Add the required HTML5 skeleton
     <!-- =========================================================
     STEP 5: Two secondary content blocks + CTA section 
     ========================================================= -->
-<div>
-  <section>
-  <h2>Improving Yourself as an Artist</h2>
-  <p>
-    If you have an interest in improving your art skills, take action!
-   </p>
-    <ul>
-      <li> <a href="#youtube">Youtube: Thousands of free tutorial videos for any art level.</a></li>
-      <li> <a href="#drawabox">Draw A Box: A free website with exercises designed to help improve your fundamental skills in art.</a></li>
-    </ul>
+<section class = "secondary">
+  <div class = "container secondary-grid">
+    <section class = "card">
+      <div class = "card-text">
+        <h2>Videogames</h2>
+        <p>
+          Growing up, I was quite shy, making it difficult to make friends. Playing videogames was both a way to connect to others and a way to distract myself from loneliness.
+          My all-time favorite franchise is the Pokemon series; I've played almost every single main series game and several spin-off games.
+        </p>
+      </div>
+    </section>
+
+    <section class = "card">
+      <div class = "card-text">
+        <h2>My Collections</h2>
+        <p>
+          I have several small collections related to my passions, some that I've been working on for years. These include Pokemon cards, My Little Pony brushable toys, and Ball-Jointed Dolls (BJDs).
+        </p>
+      </div>
+    </section>
+
+    <section class = "cta-section">
+  <div class = "cta-container">
+    <div class = "cta-text">
+        <h2>Improving Yourself as an Artist</h2>
+        <p>
+          If you have an interest in improving your art skills, take action! DrawABox is a free online resource that provides lessons and exercises to help you improve your fundamental art skills.
+
+        </p>
+        <a href="https://drawabox.com/" class="btn btn-dark">Check Out DrawABox Now!</a>
+      </div>
+    </div>
 </section>
-<section>
-  <h2>Advice For Fellow Collectors</h2>
-  <p> 
-    One of my favorite ways to connect with fellow collectors is via social media sites, like Instagram or Tumblr.
-    I find that these communities tend to be more welcoming and friendly than other online communities, and it gives me new ideas for displaying my collections
-    as well as resources for finding some personal highly sought-after items.
-  </p>
-</section>
-</div>
+
     
 
     <!-- =========================================================
     STEP 6: Footer 
     ========================================================= -->
-<footer>
+<footer class = "site-footer">
+  <div class = "container footer-inner">
+    <div class = "footer-left">
     <p>&copy; 2026 Taryn Troska</p>
-<ul> 
-  <li><a href="#">Privacy</a></li>
-  <li><a href="#">Accessibility</a></li>
-  <li><a href="#">Back to Top</a></li>
-</ul>
+    </div>
+    <div class = "footer-cols">
+    <ul> 
+      <div class = "footer-col">
+       <li><a href="#">Privacy</a></li>
+        <li><a href="#">Accessibility</a></li>
+       <li><a href="#">Back to Top</a></li>
+    </ul>
+      </div>
+    </div>
+  </div>
 </footer>
   </body>
 </html>
